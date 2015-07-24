@@ -16,7 +16,7 @@ function urlsApi() {
 
     //Root Api url
     $root = '../api/v1';
-    
+
     return array(
         // INSERT
         //'new_tab' => $root . '/' . $new . '/' . $tab,

@@ -1,0 +1,164 @@
+{{!--responsive--}}
+
+<div class='row'>
+    <div class='col-lg-12'>
+        
+    {{!-- Section Table seminuevos--}}
+    <section class='panel'>
+        <header class='panel-heading'>
+            <span class='tools pull-right'>
+                <a href='javascript:;' class='fa fa-chevron-down'></a>
+            </span>
+            <h4>Busque su seminuevo</h4>
+        </header>
+
+        <div class='panel-body page'>
+            <form class='' id='get-sen-filters'>
+                
+                <section class='panel' 
+                         style='background-color: rgba(255,255,255,0);
+                                border-radius: 0px;
+                                box-shadow: 0 0 0 rgba(0,0,0,0);
+                                margin-bottom: 0px;'>
+                    <div class='panel-body page'>
+
+                        <div class='form'>
+
+                            <div class='form-inline col-sm-12 col-md-12'>
+                                <div class='form-group col-sm-12 col-md-12'>
+                                    <label for='sen-filter-search' class='control-label'>
+                                        <lablel>
+                                            Búsqueda
+                                        </label>
+                                    </label>
+                                    <div>
+                                        <input class='form-control m-bot15' id='sen-filter-search' name='sen_search' type='text' />
+                                    </div>
+                                </div>
+                            </div>
+
+                        <div>
+                    </div>
+                </section>
+                
+                <section class='panel' 
+                         style='background-color: rgba(255,255,255,0);
+                                border-radius: 0px;
+                                box-shadow: 0 0 0 rgba(0,0,0,0);
+                                margin-bottom: 0px;'>
+                    <div class='panel-body page'>
+                    
+                        <div class='form'>
+
+                            <div class='form-inline col-sm-12 col-md-12'>
+                                <div class='form-group col-sm-3 col-md-3'>
+                                    <label for='sen-filter-agency' class='control-label'>
+                                        <lablel>
+                                            Agencia
+                                        </label>
+                                    </label>
+                                    <div id='div-select-sen-filter-agency'>
+                                        {{!--
+                                        <select class='form-control m-bot15' id='sen-filter-agency' name='sen_agency'>
+                                            <option value=''> - Todas las Agencias - </option>
+                                            {{#each camadpa}}
+                                            <option value='{{id}}'>{{nombre}}</option>
+                                            {{/each}}
+                                        </select>
+                                        --}}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class='form-inline col-sm-12 col-md-12'>
+                                <div class='form-group col-sm-3 col-md-3'>
+                                    <label for='sen-filter-category' class='control-label'>
+                                        <lablel>
+                                            Categoría
+                                        </label>
+                                    </label>
+                                    <div id='div-select-sen-filter-category'>
+                                        {{!--
+                                        <select class='form-control m-bot15' id='sen-filter-category' name='sen_category'>
+                                            <option value=''> - Todas las Categorías - </option>
+                                            {{#each camadpa}}
+                                            <option value='{{id}}'>{{nombre}}</option>
+                                            {{/each}}
+                                        </select>
+                                        --}}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class='form-inline col-sm-12 col-md-12'>
+                                <div class='form-group col-sm-3 col-md-3'>
+                                    <label for='sen-filter-brand' class='control-label'>
+                                        <lablel>
+                                            Marca
+                                        </label>
+                                    </label>
+                                    <div id='div-select-sen-filter-brand'>
+                                        {{!--
+                                        <select class='form-control m-bot15' id='sen-filter-brand' name='sen_brand'>
+                                            <option value=''> - Todas las Marcas - </option>
+                                            {{#each camadpa}}
+                                            <option value='{{id}}'>{{nombre}}</option>
+                                            {{/each}}
+                                        </select>
+                                        --}}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class='form-inline col-sm-12 col-md-12'>
+                                <div class='form-group col-sm-3 col-md-3'>
+                                    <label for='sen-filter-model' class='control-label'>
+                                        <lablel>
+                                            Modelo
+                                        </label>
+                                    </label>
+                                    <div id='div-select-sen-filter-model'>
+                                        {{!--
+                                        <select class='form-control m-bot15' id='sen-filter-model' name='sen_model'>
+                                            <option value=''> - Todas los Modelos - </option>
+                                            {{#each camadpa}}
+                                            <option value='{{id}}'>{{nombre}}</option>
+                                            {{/each}}
+                                        </select>
+                                        --}}
+                                    </div>
+                                </div>
+                            </div>
+
+                        <div>
+                    </div>
+                </section>
+
+            </form>
+
+            <section class='panel' 
+                 style='background-color: rgba(255,255,255,0);
+                        border-radius: 0px;
+                        box-shadow: 0 0 0 rgba(0,0,0,0);
+                        margin-bottom: 0px;'>
+            <div class='panel-body page'>
+                <div class='form'>
+                    <div class='clearfix'></div>
+                    <div class='form-inline col-sm-12 col-md-12'>
+                        <div class='col-sm-1 col-md-2'></div>
+                        <button class='btn btn-default button-resp col-sm-6 col-md-4'
+                                id='sen-filters-clean'>
+                            Limpiar Búsqueda
+                        </button>
+                        <div class='col-sm-1 col-md-2'></div>
+                    </div>
+                    <div class='clearfix'></div>
+                    <br>
+                <div>
+            </div>
+        </section>
+        </div>
+      </section>
+
+    </div>
+</div>

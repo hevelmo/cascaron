@@ -1,0 +1,33 @@
+{{#each camadpa}}
+<tr>
+    <td>{{descripcion}}</td>
+    <td>{{agencia.nombre}}</td>
+    <td>{{categoria.nombre}}</td>
+    <td>{{marca.nombre}}</td>
+    <td>{{modelo.nombre}}</td>
+    <td>{{anio}}</td>
+    <td class='currency-h'>{{precio}}</td>
+    <td>{{cilindros}} cilindros</td>
+    <td>{{transmision}}</td>
+    <td>{{color}}</td>
+    <td>{{interior}}</td>
+    <td class='btn_lage_resp'>
+        <button class='btn btn-link sen-action-set large-button'
+                id='sen-action-set-{{id}}' data-sen-id='{{id}}'>
+            Editar
+        </button>
+    </td>
+    <td class='btn_lage_resp'>
+        <button class='btn btn-link sen-action-picture large-button'
+                id='sen-action-picture-{{id}}' data-sen-id='{{id}}'>
+            Imágenes
+        </button>
+    </td>
+    <td>
+        <button class='sen-action-delete button-abs-resp button-abs-resp-en'
+                id='sen-action-delete-{{id}}' 
+                data-sen-id='{{id}}'>
+            <i class='fa fa-times-circle-o'></i>
+        </button>
+</tr>
+{{/each}}

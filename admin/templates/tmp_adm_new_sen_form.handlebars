@@ -1,0 +1,270 @@
+{{!--responsive--}}
+<div class='row'>
+    <div class='col-lg-12'>
+        <section class='panel'>
+            <header class='panel-heading'>
+
+                <span class='tools pull-right'>
+                    <a href='javascript:;' class='fa fa-chevron-down'></a>
+                </span>
+                
+                <h1 class='title_add_seminuevo'>
+                    Agregar Seminuevo
+                </h1>
+            </header>
+            <div class='panel-body'>
+                <div class='form'>
+                    <form  id='new-sen'>
+                        <div class='form-inline col-sm-12 col-md-12'>
+                            <div class='row'>
+                                <div class='col-sm-3 col-md-3'></div>
+                                <div class='col-sm-6 col-md-6'>
+
+                                    <div class='form-group col-sm-12 col-md-12' style='margin-top: 10px;'>
+                                        <label for='new-sen-description' class='control-label'>
+                                            <sup>
+                                                <i class='fa fa-asterisk' style='position: relative; top: 4px; padding: 5px;'></i>
+                                            </sup>
+                                            <label>
+                                                Descripción
+                                            </label>
+                                        </label>
+                                        <div>
+                                            <textarea class='form-control' id='new-sen-description' name='sen_description' type='text'></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class='form-group col-sm-12 col-md-12' style='margin-top: 10px;'>
+                                        <label for='new-sen-agency' class='control-label'>
+                                            <sup>
+                                                <i class='fa fa-asterisk' style='position: relative; top: 4px; padding: 5px;'></i>
+                                            </sup>
+                                            <label>
+                                                Agencia
+                                            </label>
+                                        </label>
+                                        <div id='div-select-new-sen-agency'>
+                                            {{!--
+                                            <select class='new-sen-select form-control m-bot15' id='new-sen-agency' name='sen_agency'>
+                                                <option value=''> - Seleccione una agencia - </option>
+                                                {{#each camadpa}}
+                                                <option value='{{id}}'>{{nombre}}</option>
+                                                {{/each}}
+                                            </select>
+                                            --}}
+                                        </div>
+                                    </div>
+
+                                    <div class='form-group col-sm-12 col-md-12' style='margin-top: 10px;'>
+                                        <label for='new-sen-category' class='control-label'>
+                                            <sup>
+                                                <i class='fa fa-asterisk' style='position: relative; top: 4px; padding: 5px;'></i>
+                                            </sup>
+                                            <label>
+                                                Categoría
+                                            </label>
+                                        </label>
+                                        <div id='div-select-new-sen-category'>
+                                            {{!--
+                                            <select class='new-sen-select form-control m-bot15' id='new-sen-category' name='sen_category'>
+                                                <option value=''> - Seleccione una categoría - </option>
+                                                {{#each camadpa}}
+                                                <option value='{{id}}'>{{nombre}}</option>
+                                                {{/eaach}}
+                                            </select>
+                                            --}}
+                                        </div>
+                                    </div>
+
+                                    <div class='form-group col-sm-12 col-md-12' style='margin-top: 10px;'>
+                                        <label for='new-sen-brand' class='control-label'>
+                                            <sup>
+                                                <i class='fa fa-asterisk' style='position: relative; top: 4px; padding: 5px;'></i>
+                                            </sup>
+                                            <label>
+                                                Marca
+                                            </label>
+                                        </label>
+                                        <div id='div-select-new-sen-brand'>
+                                            {{!--
+                                            <select class='new-sen-select form-control m-bot15' id='new-sen-brand' name='sen_brand'>
+                                                <option value=''> - Seleccione una marca - </option>
+                                                {{#each camadpa}}
+                                                <option value='{{id}}'>{{nombre}}</option>
+                                                {{/each}}
+                                            </select>
+                                            --}}
+                                        </div>
+                                    </div>
+
+                                    <div class='form-group col-sm-12 col-md-12' style='margin-top: 10px;'>
+                                        <label for='new-sen-model' class='control-label'>
+                                            <sup>
+                                                <i class='fa fa-asterisk' style='position: relative; top: 4px; padding: 5px;'></i>
+                                            </sup>
+                                            <label>
+                                                Modelo
+                                            </label>
+                                        </label>
+                                        <div id='div-select-new-sen-model'>
+                                            {{!--
+                                            <select class='new-sen-select form-control m-bot15' id='new-sen-model' name='sen_model'>
+                                                <option value=''> - Seleccione una modelo - </option>
+                                                {{#each camadpa}}
+                                                <option value='{{id}}'>{{nombre}}</option>
+                                                {{/each}}
+                                            </select>
+                                            --}}
+                                        </div>
+                                    </div>
+
+                                    <div class='form-group col-sm-12 col-md-12' style='margin-top: 10px;'>
+                                        <label for='new-sen-year' class='control-label'>
+                                            <sup>
+                                                <i class='fa fa-asterisk' style='position: relative; top: 4px; padding: 5px;'></i>
+                                            </sup>
+                                            <label>
+                                                Año
+                                            </label>
+                                        </label>
+                                        <div>
+                                            <input class='new-sen-input form-control' id='new-sen-year' name='sen_year' type='text' />
+                                        </div>
+                                    </div>
+
+                                    <div class='form-group col-sm-12 col-md-12' style='margin-top: 10px;'>
+                                        <label for='new-sen-price' class='control-label'>
+                                            <sup>
+                                                <i class='fa fa-asterisk' style='position: relative; top: 4px; padding: 5px;'></i>
+                                            </sup>
+                                            <label>
+                                                Precio
+                                            </label>
+                                        </label>
+                                        <div>
+                                            <input class='new-sen-input form-control' id='new-sen-price' name='sen_price' type='text' />
+                                        </div>
+                                    </div>
+
+                                    <div class='form-group col-sm-12 col-md-12' style='margin-top: 10px;'>
+                                        <label for='new-sen-cylinders' class='control-label'>
+                                            <sup>
+                                                <i class='fa fa-asterisk' style='position: relative; top: 4px; padding: 5px;'></i>
+                                            </sup>
+                                            <label>
+                                                Cilindros
+                                            </label>
+                                        </label>
+                                        <div>
+                                            <input class='new-sen-input form-control' id='new-sen-cylinders' name='sen_cylinders' type='text' />
+                                        </div>
+                                    </div>
+
+                                    <div class='form-group col-sm-12 col-md-12' style='margin-top: 10px;'>
+                                        <label for='new-sen-transmission' class='control-label'>
+                                            <sup>
+                                                <i class='fa fa-asterisk' style='position: relative; top: 4px; padding: 5px;'></i>
+                                            </sup>
+                                            <label>
+                                                Transmisión
+                                            </label>
+                                        </label>
+                                        <div>
+                                            <select class='new-sen-select form-control m-bot15' id='new-sen-transmission' name='sen_transmission'>
+                                                <option value=''> - Seleccione un tipo de transmisión - </option>
+                                                <option value='AUTOMÁTICA'>AUTOMÁTICA</option>
+                                                <option value='MANUAL'>MANUAL</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class='form-group col-sm-12 col-md-12' style='margin-top: 10px;'>
+                                        <label for='new-sen-color' class='control-label'>
+                                            <sup>
+                                                <i class='fa fa-asterisk' style='position: relative; top: 4px; padding: 5px;'></i>
+                                            </sup>
+                                            <label>
+                                                Color
+                                            </label>
+                                        </label>
+                                        <div>
+                                            <select class='new-sen-select form-control m-bot15' id='new-sen-color' name='sen_color'>
+                                                <option value=''> - Seleccione un color - </option>
+                                                <option value='ALPINE'>ALPINE</option>
+                                                <option value='ALUMINIO'>ALUMINIO</option>
+                                                <option value='AMARILLO'>AMARILLO</option>
+                                                <option value='ARENA'>ARENA</option>
+                                                <option value='AZUL'>AZUL</option>
+                                                <option value='BLACK O'>BLACK O</option>
+                                                <option value='BLANCO'>BLANCO</option>
+                                                <option value='CAFE'>CAFE</option>
+                                                <option value='CEREZA'>CEREZA</option>
+                                                <option value='CHAMPAGNE'>CHAMPAGNE</option>
+                                                <option value='GRIS'>GRIS</option>
+                                                <option value='KHAKI'>KHAKI</option>
+                                                <option value='NEGRO'>NEGRO</option>
+                                                <option value='PLATA'>PLATA</option>
+                                                <option value='ROJO'>ROJO</option>
+                                                <option value='TINTO'>TINTO</option>
+                                                <option value='VERDE'>VERDE</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class='form-group col-sm-12 col-md-12' style='margin-top: 10px;'>
+                                        <label for='new-sen-interior' class='control-label'>
+                                            <sup>
+                                                <i class='fa fa-asterisk' style='position: relative; top: 4px; padding: 5px;'></i>
+                                            </sup>
+                                            <label>
+                                                Interior
+                                            </label>
+                                        </label>
+                                        <div>
+                                            <select class='new-sen-select form-control m-bot15' id='new-sen-interior' name='sen_interior'>
+                                                <option value=''> - Seleccione un tipo de interior - </option>
+                                                <option value='TELA'>TELA</option>
+                                                <option value='PIEL'>PIEL</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class='col-sm-3 col-md-3'></div>
+                                <div class='clearfix'></div>
+                            </div>
+                        </div>
+                    </form>
+                    <br>
+                    <div class='form-inline col-sm-12 col-md-12'>
+                        <div class='col-sm-1 col-md-2'></div>
+                        <button class='btn btn-success button-resp col-sm-4 col-md-4' id='new-sen-save'>
+                            Guardar
+                        </button>
+                        <div class='col-sm-1 col-md-1'></div>
+                        <button class='btn btn-default button-resp col-sm-4 col-md-4' id='new-sen-clean'>
+                            Limpiar
+                        </button>
+                        <div class='col-sm-1 col-md-1'></div>
+                    </div>
+                    <div class='clearfix'></div>
+                </div>
+            </div>
+        </section>
+
+        <section class='panel'>
+            <div class='panel-body'>
+                <div class='form'>
+                    <div class='form-group'>
+                        <div class='col-lg-offset-3 col-lg-6' align='center'>
+                            <button class='btn btn-success button-resp' id='new-sen-seminuevos-list'>
+                                Listado de seminuevos
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</div>

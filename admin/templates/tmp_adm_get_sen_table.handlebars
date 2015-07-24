@@ -1,0 +1,106 @@
+{{!--responsive--}}
+
+<div class='row'>
+    <div class='col-lg-12'>
+        
+    {{!-- Section Table senducts--}}
+    <section class='panel'>
+        <header class='panel-heading'>
+            <span class='tools pull-right'>
+                <a href='javascript:;' class='fa fa-chevron-down'></a>
+            </span>
+            <h4 id='sen-results'>0 Seminuevos</h4>
+        </header>
+
+        <div class='panel-body page'>
+          <table id='sen-list' class='table table-hover table-vcenter layout display responsive-table'>
+            <thead>
+                <tr>
+                    <th style='text-align: left'>
+                        <a class='sen-sorter' 
+                           data-sen-sorter='des' 
+                           data-sen-sort='ASC'>
+                          Descripción
+                        </a>
+                    </th>
+                    <th style='text-align: left'>
+                        <a class='sen-sorter' 
+                           data-sen-sorter='agn' 
+                           data-sen-sort='ASC'>
+                          Agencia
+                        </a>
+                    </th>
+                    <th style='text-align: left'>
+                        <a class='sen-sorter' 
+                           data-sen-sorter='cat' 
+                           data-sen-sort='ASC'>
+                          Categoría
+                        </a>
+                    </th>
+                    <th style='text-align: left'>
+                        <a class='sen-sorter' 
+                           data-sen-sorter='mar' 
+                           data-sen-sort='ASC'>
+                          Marca
+                        </a>
+                    </th>
+                    <th style='text-align: left'>
+                        <a class='sen-sorter' 
+                           data-sen-sorter='mdo' 
+                           data-sen-sort='ASC'>
+                          Modelo
+                        </a>
+                    </th>
+                    <th style='text-align: left'>
+                        <a class='sen-sorter' 
+                           data-sen-sorter='anio' 
+                           data-sen-sort='ASC'>
+                          Año
+                        </a>
+                    </th>
+                    <th style='text-align: left'>
+                        <a class='sen-sorter' 
+                           data-sen-sorter='pri' 
+                           data-sen-sort='ASC'>
+                          Precio
+                        </a>
+                    </th>
+                    <th style='text-align: left'>
+                        <a class='sen-sorter' 
+                           data-sen-sorter='cil' 
+                           data-sen-sort='ASC'>
+                          Cilindraje
+                        </a>
+                    </th>
+                    <th style='text-align: left'>
+                        <a class='sen-sorter' 
+                           data-sen-sorter='tra' 
+                           data-sen-sort='ASC'>
+                          Transmisión
+                        </a>
+                    </th>
+                    <th style='text-align: left'>
+                        <a class='sen-sorter' 
+                           data-sen-sorter='col' 
+                           data-sen-sort='ASC'>
+                          Color
+                        </a>
+                    </th>
+                    <th style='text-align: left'>
+                        <a class='sen-sorter' 
+                           data-sen-sorter='int' 
+                           data-sen-sort='ASC'>
+                          Interior
+                        </a>
+                    </th>
+                    <th colspan='3'><th>
+                </tr>
+            </thead>
+            {{!-- senducts List, table tbody--}}
+            <tbody id='get-sen-list'></tbody>
+          </table>
+        </div>
+      </section>
+
+    </div>
+</div>
